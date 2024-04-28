@@ -7,7 +7,7 @@ import inquirer from 'inquirer';
       {
         type: 'input',
         name: 'num1',
-        message: 'Enter the first number:',
+        message: 'Enter your first number:',
         validate: (value: string) => !isNaN(parseFloat(value)) || 'Please enter a valid number',
       },
       {
@@ -19,7 +19,7 @@ import inquirer from 'inquirer';
       {
         type: 'input',
         name: 'num2',
-        message: 'Enter the second number:',
+        message: 'Enter your second number:',
         validate: (value: string) => !isNaN(parseFloat(value)) || 'Please enter a valid number',
       },
     ])
@@ -56,3 +56,5 @@ import inquirer from 'inquirer';
     .catch((error: Error) => {
       console.log('Error:', error.message);
     });
+
+    console.log("Operation finished!")
